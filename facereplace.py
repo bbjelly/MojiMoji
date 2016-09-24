@@ -15,7 +15,7 @@ from PIL import Image
 def DetectFace(image, faceCascade):
 
     min_size = (20,20)
-    image_scale = 2
+    image_scale = 5
     haar_scale = 1.1
     min_neighbors = 3
     haar_flags = 0
@@ -73,7 +73,7 @@ capture = cv.CaptureFromCAM(0)
 #faceCascade = cv.Load("haarcascades/haarcascade_frontalface_default.xml")
 #faceCascade = cv.Load("haarcascades/haarcascade_frontalface_alt2.xml")
 # faceCascade = cv.Load("haarcascades/haarcascade_frontalface_alt.xml")
-faceCascade = cv.Load("/Users/Sally/Desktop/opencv-2.4.9/data/haarcascades/haarcascade_frontalface_alt2.xml")
+faceCascade = cv.Load("/Users/lucasdellabella/PersonalProjects/MojiMoji/data/haarcascades/haarcascade_frontalface_alt2.xml")
 #faceCascade = cv.Load("haarcascades/haarcascade_frontalface_alt_tree.xml")
 
 while (cv.WaitKey(15)==-1):
